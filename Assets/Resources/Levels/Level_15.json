@@ -1,0 +1,479 @@
+{
+    "level": 15,
+    "target": {
+        "TargetType": 1,
+        "score": 0,
+        "goalItems": [
+            {
+                "goalItem": 1,
+                "count": 0
+            },
+            {
+                "goalItem": 2,
+                "count": 0
+            },
+            {
+                "goalItem": 3,
+                "count": 0
+            },
+            {
+                "goalItem": 4,
+                "count": 74
+            },
+            {
+                "goalItem": 5,
+                "count": 76
+            }
+        ]
+    },
+    "tiles": [
+        {
+            "rowIndex": 0,
+            "columnIndex": 0,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 0,
+            "columnIndex": 1,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 0,
+            "columnIndex": 2,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 0,
+            "columnIndex": 3,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 0,
+            "columnIndex": 4,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 0,
+            "columnIndex": 5,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 0,
+            "columnIndex": 6,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 0,
+            "columnIndex": 7,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 1,
+            "columnIndex": 0,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 1,
+            "columnIndex": 1,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 1,
+            "columnIndex": 2,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 1,
+            "columnIndex": 3,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 1,
+            "columnIndex": 4,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 1,
+            "columnIndex": 5,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 5
+        },
+        {
+            "rowIndex": 1,
+            "columnIndex": 6,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 5
+        },
+        {
+            "rowIndex": 1,
+            "columnIndex": 7,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 2,
+            "columnIndex": 0,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 2,
+            "columnIndex": 1,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 5
+        },
+        {
+            "rowIndex": 2,
+            "columnIndex": 2,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 5
+        },
+        {
+            "rowIndex": 2,
+            "columnIndex": 3,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 2,
+            "columnIndex": 4,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 5
+        },
+        {
+            "rowIndex": 2,
+            "columnIndex": 5,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 2,
+            "columnIndex": 6,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 4
+        },
+        {
+            "rowIndex": 2,
+            "columnIndex": 7,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 4
+        },
+        {
+            "rowIndex": 3,
+            "columnIndex": 0,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 4
+        },
+        {
+            "rowIndex": 3,
+            "columnIndex": 1,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 4
+        },
+        {
+            "rowIndex": 3,
+            "columnIndex": 2,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 3,
+            "columnIndex": 3,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 5
+        },
+        {
+            "rowIndex": 3,
+            "columnIndex": 4,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 3,
+            "columnIndex": 5,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 3,
+            "columnIndex": 6,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 4
+        },
+        {
+            "rowIndex": 3,
+            "columnIndex": 7,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 4
+        },
+        {
+            "rowIndex": 4,
+            "columnIndex": 0,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 4
+        },
+        {
+            "rowIndex": 4,
+            "columnIndex": 1,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 4
+        },
+        {
+            "rowIndex": 4,
+            "columnIndex": 2,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 4,
+            "columnIndex": 3,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 5
+        },
+        {
+            "rowIndex": 4,
+            "columnIndex": 4,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 4,
+            "columnIndex": 5,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 4,
+            "columnIndex": 6,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 4,
+            "columnIndex": 7,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 5,
+            "columnIndex": 0,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 5,
+            "columnIndex": 1,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 5,
+            "columnIndex": 2,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 5,
+            "columnIndex": 3,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 5
+        },
+        {
+            "rowIndex": 5,
+            "columnIndex": 4,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 5,
+            "columnIndex": 5,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 5,
+            "columnIndex": 6,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 5,
+            "columnIndex": 7,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 6,
+            "columnIndex": 0,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 6,
+            "columnIndex": 1,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 6,
+            "columnIndex": 2,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 6,
+            "columnIndex": 3,
+            "colorIndex": -1,
+            "occupied": true,
+            "goalItemType": 5
+        },
+        {
+            "rowIndex": 6,
+            "columnIndex": 4,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 6,
+            "columnIndex": 5,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 6,
+            "columnIndex": 6,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 6,
+            "columnIndex": 7,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 7,
+            "columnIndex": 0,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 7,
+            "columnIndex": 1,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 7,
+            "columnIndex": 2,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 7,
+            "columnIndex": 3,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 7,
+            "columnIndex": 4,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 7,
+            "columnIndex": 5,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 7,
+            "columnIndex": 6,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        },
+        {
+            "rowIndex": 7,
+            "columnIndex": 7,
+            "colorIndex": -1,
+            "occupied": false,
+            "goalItemType": 0
+        }
+    ]
+}

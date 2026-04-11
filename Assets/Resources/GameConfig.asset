@@ -1,0 +1,329 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d9f20c2632e1cf419468c1090408789, type: 3}
+  m_Name: GameConfig
+  m_EditorClassIdentifier: Assembly-CSharp::GameConfig
+  TileColorConfig:
+    ColorSprites:
+    - Tile: {fileID: 21300000, guid: 405f10ccb819b0b479af972b49a5502b, type: 3}
+      TileBreak: {fileID: 21300000, guid: acf39c85d2da57549bbf12540a69b80e, type: 3}
+      TileHightLight: {fileID: 21300000, guid: 36514937b31637449b99b7bb1ee96276, type: 3}
+      FBXTile: {fileID: 21300000, guid: a6e5f8e41d0313d43b4b857a36bf74c7, type: 3}
+      LikeIcon: {fileID: 21300000, guid: 15b03422629f4614c88c3d263171f1e4, type: 3}
+      OutlineVertical: {fileID: 21300000, guid: 39a06777a8438b64fbe70ef5110eb26b, type: 3}
+      OutlineHorizontal: {fileID: 21300000, guid: 95f84b05442077b48a880cf8ccb28aa6, type: 3}
+      FinishFXVertical: {fileID: 8733249905766961659, guid: bdda334d6be93814e9764cd6df3edae6, type: 3}
+      FinishFXHorizontal: {fileID: 8535501688133950918, guid: ce36f103de88f4c458f00db985f907bb, type: 3}
+    - Tile: {fileID: 21300000, guid: 13a5a62f801d23642a528af51ea66ef1, type: 3}
+      TileBreak: {fileID: 21300000, guid: 91c9861f120438c4395e34c1d71d3043, type: 3}
+      TileHightLight: {fileID: 21300000, guid: 8c5dce27cd970c042b824a29de5aaa1c, type: 3}
+      FBXTile: {fileID: 21300000, guid: 02c0f49ad9dbe3642be33be646a8117e, type: 3}
+      LikeIcon: {fileID: 21300000, guid: 48e8d40b11fa1f147ad496bd88f3beaa, type: 3}
+      OutlineVertical: {fileID: 21300000, guid: 08426cd0ca2fa7840905fca03153fe72, type: 3}
+      OutlineHorizontal: {fileID: 21300000, guid: 64036a6d787ba4440ad434e85fbd9a54, type: 3}
+      FinishFXVertical: {fileID: 8733249905766961659, guid: 1a4c339891db5b545a260874cc2e4700, type: 3}
+      FinishFXHorizontal: {fileID: 8535501688133950918, guid: 0cb949ff094d595438ab6351c94a9062, type: 3}
+    - Tile: {fileID: 21300000, guid: f6f0991ba7981e74792b94009e7686ee, type: 3}
+      TileBreak: {fileID: 21300000, guid: e15aadb84b1267642b1dc8b2be3a4d4c, type: 3}
+      TileHightLight: {fileID: 21300000, guid: 7f9880450d6b8be4bbf7efd639c26615, type: 3}
+      FBXTile: {fileID: 21300000, guid: 5c22728265b29fe43ac3da83b72d9ed0, type: 3}
+      LikeIcon: {fileID: 21300000, guid: 0a7db8640c9be694c895eceb227e0e5b, type: 3}
+      OutlineVertical: {fileID: 21300000, guid: b8a2ab4326ca12e449d859f9b7202cc6, type: 3}
+      OutlineHorizontal: {fileID: 21300000, guid: 11a5a078c61e50c4b83c85e479984b98, type: 3}
+      FinishFXVertical: {fileID: 8733249905766961659, guid: b56ee3a497cae444083b71876c6091ba, type: 3}
+      FinishFXHorizontal: {fileID: 8535501688133950918, guid: b12232b4643f7e94893c3b88c43635fe, type: 3}
+    - Tile: {fileID: 21300000, guid: b1cd4117a1c915b45b70fef7612e38a3, type: 3}
+      TileBreak: {fileID: 21300000, guid: 02713fd8ad2fa1e4997c1b80f456ad89, type: 3}
+      TileHightLight: {fileID: 21300000, guid: 0f75ffc0d112a6d46b08fbb98fa2f54e, type: 3}
+      FBXTile: {fileID: 21300000, guid: 68217664e221a0c49917be3402daa8f1, type: 3}
+      LikeIcon: {fileID: 21300000, guid: 2fe10751903ff4443b5a59a932e92fc7, type: 3}
+      OutlineVertical: {fileID: 21300000, guid: 9a1cea7adc8d4f344a52431d90c26720, type: 3}
+      OutlineHorizontal: {fileID: 21300000, guid: a26f52860fe645e439e3a5799da4e782, type: 3}
+      FinishFXVertical: {fileID: 8733249905766961659, guid: 258aac1bf56706b42ad7b89e4129be49, type: 3}
+      FinishFXHorizontal: {fileID: 8535501688133950918, guid: 92bf2b1ddcd642742aafc48c8276fce3, type: 3}
+    - Tile: {fileID: 21300000, guid: 92d3cc4c1298542419d6ff79761b97fa, type: 3}
+      TileBreak: {fileID: 21300000, guid: 125a90a581c8e504b8a350cf6592a57f, type: 3}
+      TileHightLight: {fileID: 21300000, guid: 556522d3df0ba6a46ac18380d5f522f5, type: 3}
+      FBXTile: {fileID: 21300000, guid: f32509a0bfc59724782fbab760640c6c, type: 3}
+      LikeIcon: {fileID: 21300000, guid: 6c8574fe52dd4c840a828b06e61e1aa9, type: 3}
+      OutlineVertical: {fileID: 21300000, guid: 641a849f73cc47145b405d4cdf170959, type: 3}
+      OutlineHorizontal: {fileID: 21300000, guid: a6ddbe4f7d6c19c4d88a47f6395a6c72, type: 3}
+      FinishFXVertical: {fileID: 8733249905766961659, guid: 1ee1bdbf7d271404ea8303dfae4dddd0, type: 3}
+      FinishFXHorizontal: {fileID: 8535501688133950918, guid: 0b09111a337b8bf4fbd024a5688a9bb9, type: 3}
+    - Tile: {fileID: 21300000, guid: bee608d9aa1003d4bab90dec3b106a15, type: 3}
+      TileBreak: {fileID: 21300000, guid: 3e43b64795f31e44fa78e4bbd17affe5, type: 3}
+      TileHightLight: {fileID: 21300000, guid: 76ed77164ffd7ac468f560ab5318c305, type: 3}
+      FBXTile: {fileID: 21300000, guid: 881dc04e5f859964c8de1392b5ac9482, type: 3}
+      LikeIcon: {fileID: 21300000, guid: 4cdb333161d6b124f9486becff43141f, type: 3}
+      OutlineVertical: {fileID: 21300000, guid: 40c31faa211269947836851132ae2bd5, type: 3}
+      OutlineHorizontal: {fileID: 21300000, guid: 596ad314a50011d4f8461dcd18d11360, type: 3}
+      FinishFXVertical: {fileID: 8733249905766961659, guid: 0730b2b70d3a1d1479b0c6fe11fc8071, type: 3}
+      FinishFXHorizontal: {fileID: 8535501688133950918, guid: 2bd659a0d4e9cdd4f9ab8c99edb1749e, type: 3}
+    - Tile: {fileID: 21300000, guid: 01df350998d04b242b07d87142629695, type: 3}
+      TileBreak: {fileID: 21300000, guid: d9569691bf2df2f43ada4ea2ab1ba601, type: 3}
+      TileHightLight: {fileID: 21300000, guid: 62a8fcdaccbb71a4eb8a4d7c4a0594ec, type: 3}
+      FBXTile: {fileID: 21300000, guid: bc50a4d3b1c632948a66d328ec4fa483, type: 3}
+      LikeIcon: {fileID: 21300000, guid: fc1ef24e655316946810c7b5f43bd5dd, type: 3}
+      OutlineVertical: {fileID: 21300000, guid: 18d8f39ce43295a44b0c50ba79191b71, type: 3}
+      OutlineHorizontal: {fileID: 21300000, guid: b328aee91fa54bc4a8b6e7b5f45508d4, type: 3}
+      FinishFXVertical: {fileID: 8733249905766961659, guid: beaedb2b7647ed548a3d985dec871cee, type: 3}
+      FinishFXHorizontal: {fileID: 8535501688133950918, guid: ca035b5234c2ad04695d72c43e75ea2c, type: 3}
+    - Tile: {fileID: 21300000, guid: d1081b04f4d758b45a49bbb1f9e42463, type: 3}
+      TileBreak: {fileID: 21300000, guid: 7fe69b5fcc51c884aaf8452c07c8afa9, type: 3}
+      TileHightLight: {fileID: 21300000, guid: 668d001ab48b7c84cb183991563b98dc, type: 3}
+      FBXTile: {fileID: 21300000, guid: 37b0dce4c5f0914498664407e3b8aae4, type: 3}
+      LikeIcon: {fileID: 21300000, guid: 19c0df7bbe1e14342a3c2663d196762d, type: 3}
+      OutlineVertical: {fileID: 21300000, guid: 6df4c2c6d63901a47bd61d049859aa02, type: 3}
+      OutlineHorizontal: {fileID: 21300000, guid: 0b330cff42452e445ac18c34b6e2b300, type: 3}
+      FinishFXVertical: {fileID: 8733249905766961659, guid: 8e03cfc99275ce24e885f9f3ebdd8dde, type: 3}
+      FinishFXHorizontal: {fileID: 8535501688133950918, guid: e007c505e40ae6440acdbdbb4bda8936, type: 3}
+    RainBowHorizontal:
+    - Tile: {fileID: 21300000, guid: a90a7aae5097b9f468a3bb502f2802db, type: 3}
+    - Tile: {fileID: 21300000, guid: 75ea589523d83e84a8480b247b94cfde, type: 3}
+    - Tile: {fileID: 21300000, guid: a8ba3b4fb6365b841aa3f4f032e0df77, type: 3}
+    - Tile: {fileID: 21300000, guid: 233f373944d1a7e4ea199266eea6673e, type: 3}
+    - Tile: {fileID: 21300000, guid: 7566cddc4d0962b46a9ed4655462b9aa, type: 3}
+    - Tile: {fileID: 21300000, guid: 9ac3745126114b34f9544ab46072bcda, type: 3}
+    - Tile: {fileID: 21300000, guid: 93c6ca12be38dbc45b6259e0a1f0ba5b, type: 3}
+    - Tile: {fileID: 21300000, guid: d254a1d073ef11b439af46349a7180d0, type: 3}
+    RainBowVertical:
+    - Tile: {fileID: 21300000, guid: 20224f6b43cac984ca32aaadab9812ae, type: 3}
+    - Tile: {fileID: 21300000, guid: 1077d807602e52b49b5cbad5b8b1c323, type: 3}
+    - Tile: {fileID: 21300000, guid: 956aa19e449287542a1d1b5aee6d7051, type: 3}
+    - Tile: {fileID: 21300000, guid: ec1a941d886656d45b513d94f8daec7e, type: 3}
+    - Tile: {fileID: 21300000, guid: 14a5e2fb1f36e2141ba20712ba8a28de, type: 3}
+    - Tile: {fileID: 21300000, guid: 47408b91fdb23f3479bc40734c228225, type: 3}
+    - Tile: {fileID: 21300000, guid: a56a9de0ed7469e4384d54a9c677b913, type: 3}
+    - Tile: {fileID: 21300000, guid: c18f95deea60345499f7b2f8cd4a9e7b, type: 3}
+    RainbowOutlineHorizontal: {fileID: 21300000, guid: 3139e12abd2f9674fad5342a5d4c6344, type: 3}
+    RainbowOutlineVertical: {fileID: 21300000, guid: b18d61b6cab611f4d984e37801c19822, type: 3}
+    MoneyTile: {fileID: 21300000, guid: 3fee9fdabd5ef0148894c43c662fc987, type: 3}
+    TileGoalItems:
+    - GoalItemType: 1
+      Tile: {fileID: 21300000, guid: 30c6b65a1de173644b9f24bd41b302a1, type: 3}
+      Icon: {fileID: 21300000, guid: 9a8fcf0b6a2a26a49bdc580bafc8fab0, type: 3}
+    - GoalItemType: 2
+      Tile: {fileID: 21300000, guid: 79e22a2374d0bbe46ac1e40b36daec55, type: 3}
+      Icon: {fileID: 21300000, guid: bf9ab8af667d6fb43b12785b3886fccf, type: 3}
+    - GoalItemType: 3
+      Tile: {fileID: 21300000, guid: 79e52f598698a504fa3c2454f16aadc9, type: 3}
+      Icon: {fileID: 21300000, guid: b04322b0509be444fa081fd6791eb93c, type: 3}
+    - GoalItemType: 4
+      Tile: {fileID: 21300000, guid: f1affec47a79117498f37f942fc0c8fb, type: 3}
+      Icon: {fileID: 21300000, guid: 7ec2825af9fce2047912d505c40fd49f, type: 3}
+    - GoalItemType: 5
+      Tile: {fileID: 21300000, guid: b91872fe1b2793548a941cfb697e58b2, type: 3}
+      Icon: {fileID: 21300000, guid: 6be727aca9c9ef34ba4f2fcf866f0596, type: 3}
+  ShapeSpawnerConfig:
+    MinimunWeight: 0.5
+    MinOccupiedOfferOneBeauty: 0.3
+    MaxOccupiedOfferOneBeauty: 0.6
+    MinOccupiedOfferTwoBeauty: 0.6
+    MaxOccupiedOfferTwoBeauty: 0.8
+    MinOccupiedOfferThreeBeauty: 0.8
+    MaxOccupiedOfferThreeBeauty: 1
+    ScorePerStages:
+    - Score: 100
+    - Score: 500
+    - Score: 900
+    - Score: 1200
+    - Score: 1500
+    - Score: 2000
+    - Score: 3000
+    - Score: 5000
+    - Score: 10000
+    - Score: 15000
+    - Score: 20000
+    - Score: 30000
+    PoolShapeConfigs:
+    - Weight: 0
+      ShapeType: 1
+      WeightPoolAdventure:
+        BaseWeight: 10
+        GrowType: 1
+        GrowWeight: 0.5
+      WeightPoolClassic:
+        BaseWeight: 10
+        GrowType: 1
+        GrowWeight: 0.5
+      ShapeRatios:
+      - ShapeData: {fileID: 11400000, guid: ab03c90fe335e2e46850e95c52083841, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 6f28c88a510abae44962a236b3d9462b, type: 2}
+      - ShapeData: {fileID: 11400000, guid: f90d3dd64eae7b849b06c7ebbaaee8e8, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 392b2adb80f0a2d4ab3d515aa3f85189, type: 2}
+    - Weight: 0
+      ShapeType: 2
+      WeightPoolAdventure:
+        BaseWeight: 3
+        GrowType: 0
+        GrowWeight: 0.1
+      WeightPoolClassic:
+        BaseWeight: 3
+        GrowType: 0
+        GrowWeight: 0.1
+      ShapeRatios:
+      - ShapeData: {fileID: 11400000, guid: eb1e12740c3fd3d40921abbd0f7ec817, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 49d79222860b66f4caae4c72ce2ced55, type: 2}
+      - ShapeData: {fileID: 11400000, guid: f15b74c4128c3df4295bb2b945ae13dc, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 3efb6713e7b2fac49b8d7756db1a5239, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 28966b9bdbce92e4d9afd711fda649bd, type: 2}
+      - ShapeData: {fileID: 11400000, guid: c356c1cefb036ab48b6e40b038325ac5, type: 2}
+    - Weight: 0
+      ShapeType: 3
+      WeightPoolAdventure:
+        BaseWeight: 10
+        GrowType: 1
+        GrowWeight: 0.5
+      WeightPoolClassic:
+        BaseWeight: 10
+        GrowType: 1
+        GrowWeight: 0.5
+      ShapeRatios:
+      - ShapeData: {fileID: 11400000, guid: eb1e12740c3fd3d40921abbd0f7ec817, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 49d79222860b66f4caae4c72ce2ced55, type: 2}
+      - ShapeData: {fileID: 11400000, guid: df4201dcb7c859c4e976470d22fe883a, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 88e631c41b809c74da6b08cab3d30ea3, type: 2}
+      - ShapeData: {fileID: 11400000, guid: fcce545926d779144b4d920d06377499, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 1bda0d9bb561aa14880e1ab5e78394f5, type: 2}
+      - ShapeData: {fileID: 11400000, guid: a0f24b2c52a4a7e4a8f6ccf2e38f4a81, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 2fe2c9fcc8560674f8a105eaa735a42d, type: 2}
+    - Weight: 0
+      ShapeType: 3
+      WeightPoolAdventure:
+        BaseWeight: 5
+        GrowType: 0
+        GrowWeight: 0.5
+      WeightPoolClassic:
+        BaseWeight: 5
+        GrowType: 0
+        GrowWeight: 0.5
+      ShapeRatios:
+      - ShapeData: {fileID: 11400000, guid: 1da10babc3ab8874bb845e2f00b97bad, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 8becec27df932a9428c626d92561d64f, type: 2}
+      - ShapeData: {fileID: 11400000, guid: d630ce7118e3abf4d9e6b44c6551ac3d, type: 2}
+      - ShapeData: {fileID: 11400000, guid: cfa59c7bd716d244aae016de15e45f3d, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 37e608e51ca87bb4e984686e259d8fea, type: 2}
+      - ShapeData: {fileID: 11400000, guid: bf891a9a2626bc04099412a4b1346ed2, type: 2}
+      - ShapeData: {fileID: 11400000, guid: a0f24b2c52a4a7e4a8f6ccf2e38f4a81, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 6445f71bd11f768478079dc2b1247896, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 58143f74d3a29484c8de648103919367, type: 2}
+      - ShapeData: {fileID: 11400000, guid: fe6bb66838b40ff43b96d3ceb4774918, type: 2}
+      - ShapeData: {fileID: 11400000, guid: c9ada56545e942445a24e54d05d7f5ec, type: 2}
+      - ShapeData: {fileID: 11400000, guid: c6bafac8dc034d2408395c33c2bf60ac, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 6058cd1fc848f4343b3c606fa78d9558, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 4243e402ae6aeee41b352a5db1d13bba, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 4ab9a5f4fcba99a4fbf5740ff9b91a20, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 4ad66673686566248b6d2991e9d69441, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 430a78352698ade4f938cdcd2a3e71d1, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 1de72c1cd8c790640a9c412f951b00d2, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 17d4ec29204ede14dbfe071f84f8d44b, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 6391b7a9814a2a740bc930b327b93b3a, type: 2}
+      - ShapeData: {fileID: 11400000, guid: a4fae0eaf812357489a6fafc073c2ec8, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 92026f83cb39ce04bba53d073a455ed5, type: 2}
+      - ShapeData: {fileID: 11400000, guid: b829b0e9ab327f848a608838032deac8, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 3564ae72a14301d4cb88e8a79ab394d4, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 95380d1ffa63c0c4ba2f2c4655470a56, type: 2}
+      - ShapeData: {fileID: 11400000, guid: f44f688f831782749b93c79f406fa341, type: 2}
+      - ShapeData: {fileID: 11400000, guid: d8b99da026b5beb4a98a5fca012350aa, type: 2}
+      - ShapeData: {fileID: 11400000, guid: 15319325550806d4b81dc78da807e669, type: 2}
+      - ShapeData: {fileID: 11400000, guid: ca9b124b1d236f0438879e6a8dd27c10, type: 2}
+  GameplayConfig:
+    Level: 1
+    MaxLevel: 2
+    LevelToLoop: 24
+    EverySquareOffset: 3
+    CountStartRainbow: 3
+    Duration: 0.2
+    InitSeverity: 15
+    ComboCountShake: 1
+  ScoreConfig:
+    ScorePerRowCol: 10
+    IntervalCombo: 3
+    BonusScores:
+    - Bonus: 2
+      MinScore: 20
+      MaxScore: 20
+    - Bonus: 3
+      MinScore: 30
+      MaxScore: 30
+    - Bonus: 4
+      MinScore: 40
+      MaxScore: 40
+    - Bonus: 5
+      MinScore: 50
+      MaxScore: 50
+    - Bonus: 6
+      MinScore: 60
+      MaxScore: 60
+    - Bonus: 7
+      MinScore: 70
+      MaxScore: 70
+    - Bonus: 8
+      MinScore: 80
+      MaxScore: 80
+    - Bonus: 9
+      MinScore: 90
+      MaxScore: 90
+    - Bonus: 10
+      MinScore: 100
+      MaxScore: 100
+    ComboScores:
+    - Combo: 2
+      MinScore: 5
+      MaxScore: 5
+    - Combo: 3
+      MinScore: 10
+      MaxScore: 10
+    - Combo: 4
+      MinScore: 20
+      MaxScore: 20
+    - Combo: 5
+      MinScore: 30
+      MaxScore: 30
+    - Combo: 6
+      MinScore: 40
+      MaxScore: 40
+    - Combo: 7
+      MinScore: 50
+      MaxScore: 50
+    - Combo: 8
+      MinScore: 60
+      MaxScore: 60
+    - Combo: 9
+      MinScore: 70
+      MaxScore: 70
+    - Combo: 10
+      MinScore: 80
+      MaxScore: 80
+    - Combo: 10
+      MinScore: 0
+      MaxScore: 0
+  EffectConfig:
+    MinJumpHeight: 15
+    MaxJumpHeight: 25
+    FallDistance: 35
+    TimeJump: 200
+    TimeFall: 100
+    IntroColumnDelay: 0.03
+    IntroRowDelay: 0.06
+    IntroTileHide: 0.1
+    EndColumnDelay: 0.03
+    EndRowDelay: 0.06
+    EndTileHide: 1
+    OutlineFadeSpeed: 7
+  LevelEditorConfig:
+    FolderLevelPath: Assets/Resources/Levels
+    FolderName: Levels
+    LevelName: Level_
+    AdventureLevelConfigs:
+    - MinLevel: 1
+      MaxLevel: 78

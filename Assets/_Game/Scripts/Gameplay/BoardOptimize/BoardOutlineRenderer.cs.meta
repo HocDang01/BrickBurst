@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7e60a06fb526a494cb1172cc07a6ae33
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _outlineScoreVerticalEffectPrefab: {fileID: 4365226297399904120, guid: aa48501111db55042a389177be5d86de,
+      type: 3}
+  - _outlineScoreHorizontalEffectPrefab: {fileID: 4365226297399904120, guid: aa48501111db55042a389177be5d86de,
+      type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
