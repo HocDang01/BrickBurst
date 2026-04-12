@@ -259,7 +259,8 @@ public class GameplayManager : SingletonMono<GameplayManager>
         }
         else
         {
-            UserProperty.BrickBurstLevel++;
+            BBSaveData.Ins.Level++;
+            BBSaveData.Ins.dirty = true;
         }
         float waitTime = BBCanvasTop.Ins.GetTimeVictoryEffect();
         BoardSaveData.Ins.ClearAdventure();
@@ -274,7 +275,7 @@ public class GameplayManager : SingletonMono<GameplayManager>
                 }
                 else
                 {
-                OnCompleteInter();
+                    OnCompleteInter();
                 }
 
                 void OnCompleteInter(bool yes = true)
@@ -309,7 +310,7 @@ public class GameplayManager : SingletonMono<GameplayManager>
         // Debug.Log($"MilestoneIndex: {MilestoneIndexPrev + 1}");
         // Debug.Log($"Gap: {gap}");
         // Debug.Log($"isNoAdsByMode: {isNoAdsByMode}");
-        // return !isNoAdsByMode && UserProperty.Vip == 0 && Ads.IsAdsEnabled(AdsType.INTERSTITIAL) && Ads.IsDisplayable(AdsType.INTERSTITIAL) && Ads.IsAvailable(AdsType.INTERSTITIAL);
+        // return !isNoAdsByMode && BBSaveData.Ins.Vip == 0 && Ads.IsAdsEnabled(AdsType.INTERSTITIAL) && Ads.IsDisplayable(AdsType.INTERSTITIAL) && Ads.IsAvailable(AdsType.INTERSTITIAL);
     }
     private void SendTracking(bool win)
     {
@@ -320,17 +321,20 @@ public class GameplayManager : SingletonMono<GameplayManager>
         }
         if (PlayMode == PlayMode.Classic)
         {
-            TrackingHandler.OnClassicEnd(UserProperty.BBClassicPlayCount, ScoreManager.Ins.TotalScore, PlayTime, UserProperty.BBClassicContinue, ScoreManager.Ins.TotalScore >= 500);
-            UserProperty.BBClassicContinue = 0;
+            TrackingHandler.OnClassicEnd(BBSaveData.Ins.BBClassicPlayCount, ScoreManager.Ins.TotalScore, PlayTime, BBSaveData.Ins.BBClassicContinue, ScoreManager.Ins.TotalScore >= 500);
+            BBSaveData.Ins.BBClassicContinue = 0;
+            BBSaveData.Ins.dirty = true;
         }
         else if (PlayMode == PlayMode.Adventure)
         {
-            TrackingHandler.OnAdventureEnd(UserProperty.BBStartLevelCount, ScoreManager.Ins.TotalScore, PlayTime, UserProperty.BBContinueLevelCount, win);
-            UserProperty.BBContinueLevelCount = 0;
+            BBSaveData.Ins.BBStartLevelCount += 1;
+            TrackingHandler.OnAdventureEnd(BBSaveData.Ins.BBStartLevelCount, ScoreManager.Ins.TotalScore, PlayTime, BBSaveData.Ins.BBContinueLevelCount, win);
+            BBSaveData.Ins.BBContinueLevelCount = 0;
             if (win)
             {
-                UserProperty.BBStartLevelCount = 0;
+                BBSaveData.Ins.BBStartLevelCount = 0;
             }
+            BBSaveData.Ins.dirty = true;
         }
     }
 
@@ -403,8 +407,8 @@ public enum PlayMode
 //             SoundManager.Ins.winFX.Play();
 //             if (BBManager.NewAdventure)
 //             {
-//                 MilestoneIndexPrev = UserProperty.BBMilestoneIndex;
-//                 UserProperty.BBMilestoneIndex = (UserProperty.BBMilestoneIndex + 1) % GameConfig.Ins.MoneyAdventureConfig.MilestoneDatas.Count; GameConfig.Ins.GameplayConfig.Level++;
+//                 MilestoneIndexPrev = BBSaveData.Ins.BBMilestoneIndex;
+//                 BBSaveData.Ins.BBMilestoneIndex = (BBSaveData.Ins.BBMilestoneIndex + 1) % GameConfig.Ins.MoneyAdventureConfig.MilestoneDatas.Count; GameConfig.Ins.GameplayConfig.Level++;
 //             }
 //             if (BBManager.EnableCheat)
 //             {
@@ -412,7 +416,7 @@ public enum PlayMode
 //             }
 //             else
 //             {
-//                 UserProperty.BrickBurstLevel++;
+//                 BBSaveData.Ins.BrickBurstLevel++;
 //             }
 //             float waitTime = EffectManager.Ins.GetTimeWinAdventure();
 //             BoardSaveData.Ins.ClearAdventure();
@@ -436,7 +440,7 @@ public enum PlayMode
 //                         var milestoneData = GameConfig.Ins.MoneyAdventureConfig.GetMilestoneData(MoneyModeEnum);
 //                         if (BBManager.NewAdventure &&
 //                             MilestoneIndexPrev >= milestoneData.Count - 1 ||
-//                             UserProperty.BBMilestoneIndex >= milestoneData.Count)
+//                             BBSaveData.Ins.BBMilestoneIndex >= milestoneData.Count)
 //                         {
 //                             int cashValue = milestoneData[MilestoneIndexPrev].Money;
 //                             var popupCollectMoney = PopupCollectMoney.Show();

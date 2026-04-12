@@ -28,8 +28,8 @@ public class UILevelAdventureContainer : MonoBehaviour
             }
             else
             {
-                isCurrentLevel = (level) == UserProperty.BrickBurstLevel;
-                isOvercome = level < UserProperty.BrickBurstLevel;
+                isCurrentLevel = (level) == BBSaveData.Ins.Level;
+                isOvercome = level < BBSaveData.Ins.Level;
             }
 
             Color color = isCurrentLevel ? _activateTextColor : _deactivateTextColor;

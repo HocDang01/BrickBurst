@@ -62,7 +62,7 @@ public class AdventureMap : MonoBehaviour
         }
         else
         {
-            level = UserProperty.BrickBurstLevel;
+            level = BBSaveData.Ins.Level;
         }
         int realLevel = level; // giữ nguyên level thật
 
@@ -124,7 +124,7 @@ public class AdventureMap : MonoBehaviour
         }
         else
         {
-            _levelText.text = $"Level {UserProperty.BrickBurstLevel}";
+            _levelText.text = $"Level {BBSaveData.Ins.Level}";
             _startGameBtn.enabled = true;
             _startBtnImg.sprite = _enableBtnSprite;
         }
@@ -138,7 +138,7 @@ public class AdventureMap : MonoBehaviour
     //     }
     //     else
     //     {
-    //         level = UserProperty.BrickBurstLevel;
+    //         level = BBSaveData.Ins.BrickBurstLevel;
     //     }
     //     var config = GameConfig.Ins.MainMenuConfig.AdventureLevelConfigs;
     //     int idx = -1;
@@ -166,10 +166,11 @@ public class AdventureMap : MonoBehaviour
         }
         else
         {
-            level = UserProperty.BrickBurstLevel;
+            level = BBSaveData.Ins.Level;
             if (level > 24)
             {
-                UserProperty.BrickBurstLevel = 1;
+                BBSaveData.Ins.Level = 1;
+                BBSaveData.Ins.dirty = true;
             }
         }
     }

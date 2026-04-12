@@ -16,7 +16,7 @@ public class PopupEndClassic : PopupEndGame<PopupEndClassic>
     }
     void OnEnable()
     {
-        _maxScoreText.text = Utility.FormatNumber(UserProperty.BrickBurstBestScore);
+        _maxScoreText.text = Utility.FormatNumber(BBSaveData.Ins.BestScore);
     }
 
     protected override void Replay()

@@ -20,14 +20,17 @@ public class BoardProgressService
         {
             if (!save.HasClassic())
             {
+                BBSaveData.Ins.BBClassicPlayCount += 1;
                 GameEvents.OnNeedCreateShapes?.Invoke(ShapeSpawnType.Normal);
-                TrackingHandler.OnClassicStart(UserProperty.BBClassicPlayCount, 0);
-                UserProperty.BBClassicContinue = 0;
+                TrackingHandler.OnClassicStart(BBSaveData.Ins.BBClassicPlayCount, 0);
+                BBSaveData.Ins.BBClassicContinue = 0;
+                BBSaveData.Ins.dirty = true;
                 return;
             }
             data = save.GetClassic();
-            UserProperty.BBClassicContinue++;
-            TrackingHandler.OnClassicContinue(data.currentScore, UserProperty.BBClassicContinue);
+            BBSaveData.Ins.BBClassicContinue++;
+            TrackingHandler.OnClassicContinue(data.currentScore, BBSaveData.Ins.BBClassicContinue);
+            BBSaveData.Ins.dirty = true;
         }
         else if (gameplay.PlayMode == PlayMode.Adventure)
         {
@@ -43,7 +46,7 @@ public class BoardProgressService
             }
             data = save.GetAdventure();
 
-            int level = BBManager.EnableCheat ? GameConfig.Ins.GameplayConfig.Level : UserProperty.BrickBurstLevel;
+            int level = BBManager.EnableCheat ? GameConfig.Ins.GameplayConfig.Level : BBSaveData.Ins.Level;
 
             if (level != data.level)
             {
@@ -54,8 +57,9 @@ public class BoardProgressService
                 HandleBooster();
                 return;
             }
-            UserProperty.BBContinueLevelCount++;
-            TrackingHandler.OnAdventureContinue(data.currentScore, UserProperty.BBContinueLevelCount);
+            BBSaveData.Ins.BBContinueLevelCount++;
+            BBSaveData.Ins.dirty = true;
+            TrackingHandler.OnAdventureContinue(data.currentScore, BBSaveData.Ins.BBContinueLevelCount);
         }
 
         LoadBoardFromSave(data);
@@ -118,10 +122,10 @@ public class BoardProgressService
     private void StartNewAdventure(int level = -1)
     {
         // if (level < 0)
-        //     level = UserProperty.BrickBurstLevel;
+        //     level = BBSaveData.Ins.BrickBurstLevel;
 
-        // UserProperty.BBStartLevelCount++;
-        // TrackingHandler.OnAdventureStart(level, UserProperty.BBStartLevelCount, 0);
+        // BBSaveData.Ins.BBStartLevelCount++;
+        // TrackingHandler.OnAdventureStart(level, BBSaveData.Ins.BBStartLevelCount, 0);
     }
     private void HandleBooster()
     {

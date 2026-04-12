@@ -303,7 +303,7 @@ public class ShapeSpawner : MonoBehaviour
         if (BBManager.EnableCheat)
             level = GameConfig.Ins.GameplayConfig.Level;
         else
-            level = UserProperty.BrickBurstLevel;
+            level = BBSaveData.Ins.Level;
 
         foreach (var pool in _shapeSpawnerConfig.PoolShapeConfigs)
         {

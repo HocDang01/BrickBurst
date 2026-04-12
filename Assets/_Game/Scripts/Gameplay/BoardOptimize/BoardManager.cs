@@ -164,7 +164,7 @@ public class BoardManager : MonoBehaviour
             }
             else
             {
-                targetScoreData = LoadLevelByIndex(UserProperty.BrickBurstLevel);
+                targetScoreData = LoadLevelByIndex(BBSaveData.Ins.Level);
             }
         }
         else if (GameplayManager.Ins.PlayMode == PlayMode.Classic)
@@ -251,16 +251,18 @@ public class BoardManager : MonoBehaviour
             case PlayMode.Adventure:
                 BoardSaveData.Ins.ClearAdventure();
 
-                TrackingHandler.OnAdventureEnd(UserProperty.BBStartLevelCount, ScoreManager.Ins.TotalScore,
-                                            GameplayManager.Ins.PlayTime, UserProperty.BBContinueLevelCount, false);
-                UserProperty.BBContinueLevelCount = 0;
+                TrackingHandler.OnAdventureEnd(BBSaveData.Ins.BBStartLevelCount, ScoreManager.Ins.TotalScore,
+                                            GameplayManager.Ins.PlayTime, BBSaveData.Ins.BBContinueLevelCount, false);
+                BBSaveData.Ins.BBContinueLevelCount = 0;
+                BBSaveData.Ins.dirty = true;
                 break;
             case PlayMode.Classic:
                 BoardSaveData.Ins.ClearClassic();
 
-                TrackingHandler.OnClassicEnd(UserProperty.BBClassicPlayCount, ScoreManager.Ins.TotalScore,
-                                             GameplayManager.Ins.PlayTime, UserProperty.BBClassicContinue);
-                UserProperty.BBClassicContinue = 0;
+                TrackingHandler.OnClassicEnd(BBSaveData.Ins.BBClassicPlayCount, ScoreManager.Ins.TotalScore,
+                                             GameplayManager.Ins.PlayTime, BBSaveData.Ins.BBClassicContinue);
+                BBSaveData.Ins.BBClassicContinue = 0;
+                BBSaveData.Ins.dirty = true;
                 break;
         }
         // Look like continue to don't move milestone in BBCanvasTop
@@ -280,7 +282,7 @@ public class BoardManager : MonoBehaviour
             }
             else
             {
-                targetScoreData = LoadLevelByIndex(UserProperty.BrickBurstLevel);
+                targetScoreData = LoadLevelByIndex(BBSaveData.Ins.Level);
             }
         }
         else if (GameplayManager.Ins.PlayMode == PlayMode.Classic)
@@ -299,7 +301,7 @@ public class BoardManager : MonoBehaviour
         if (BBManager.EnableCheat)
             targetScoreData = LoadLevelByIndex(GameConfig.Ins.GameplayConfig.Level);
         else
-            targetScoreData = LoadLevelByIndex(UserProperty.BrickBurstLevel);
+            targetScoreData = LoadLevelByIndex(BBSaveData.Ins.Level);
 
         GameplayManager.Ins.CanWatchAds = true;
         if (targetScoreData == null)
@@ -311,8 +313,9 @@ public class BoardManager : MonoBehaviour
             }
             else
             {
-                UserProperty.BrickBurstLevel--;
-                targetScoreData = LoadLevelByIndex(UserProperty.BrickBurstLevel);
+                BBSaveData.Ins.Level--;
+                BBSaveData.Ins.dirty = true;
+                targetScoreData = LoadLevelByIndex(BBSaveData.Ins.Level);
             }
         }
 

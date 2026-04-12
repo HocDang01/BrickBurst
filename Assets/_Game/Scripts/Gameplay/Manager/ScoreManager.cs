@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using DG.Tweening;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -58,7 +59,7 @@ public class ScoreManager : MonoBehaviour
     }
     void OnEnable()
     {
-        _bestScoreTextAnim.SetScoreImmediate(UserProperty.BrickBurstBestScore);
+        _bestScoreTextAnim.SetScoreImmediate(BBSaveData.Ins.BestScore);
         GameEvents.OnPlaceOnGrid += OnGetScore;
     }
     void OnDisable()
@@ -85,7 +86,7 @@ public class ScoreManager : MonoBehaviour
         EffectManager.Ins.EndComboBoard();
         SwitchMode();
 
-        _bestScoreTextAnim.SetScoreImmediate(UserProperty.BrickBurstBestScore);
+        _bestScoreTextAnim.SetScoreImmediate(BBSaveData.Ins.BestScore);
         _scoreClassicTextAnim.RefreshScore();
         _scoreAdventureText.RefreshScore();
         _targetSlider.value = 0f;
@@ -102,7 +103,7 @@ public class ScoreManager : MonoBehaviour
                 _classic.SetActive(false);
                 break;
             case PlayMode.Classic:
-                if (UserProperty.BrickBurstBestScore > 0)     // Just notify if had been played
+                if (BBSaveData.Ins.BestScore > 0)     // Just notify if had been played
                 {
                     _canNotiNewScore = true;
                 }
@@ -158,7 +159,7 @@ public class ScoreManager : MonoBehaviour
         {
             case PlayMode.Classic:
                 _scoreClassicTextAnim.SetScoreImmediate(TotalScore);
-                if (TotalScore >= UserProperty.BrickBurstBestScore)
+                if (TotalScore >= BBSaveData.Ins.BestScore)
                 {
                     _canNotiNewScore = false;
                 }
@@ -394,10 +395,11 @@ public class ScoreManager : MonoBehaviour
     private void UpdateClassicScore()
     {
         _scoreClassicTextAnim.SetScore(TotalScore);
-        if (TotalScore > UserProperty.BrickBurstBestScore)
+        if (TotalScore > BBSaveData.Ins.BestScore)
         {
-            UserProperty.BrickBurstBestScore = TotalScore;
-            _bestScoreTextAnim.SetScore(UserProperty.BrickBurstBestScore);
+            BBSaveData.Ins.BestScore = TotalScore;
+            BBSaveData.Ins.dirty = true;
+            _bestScoreTextAnim.SetScore(BBSaveData.Ins.BestScore);
             if (_canNotiNewScore)
             {
                 _canNotiNewScore = false;

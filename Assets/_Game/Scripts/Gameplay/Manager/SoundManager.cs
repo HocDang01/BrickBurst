@@ -52,6 +52,10 @@ public class SoundManager : SingletonMono<SoundManager>
 
         Subscribe();
 
+    }
+    protected override void Start()
+    {
+        base.Start();
         SetMusicEnabled(UserProperty.MusicOn);
         SetSfxEnabled(UserProperty.SfxOn);
     }
