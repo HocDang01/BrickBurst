@@ -14,8 +14,6 @@ public class PopupSetting : BaseUI<PopupSetting>
 
     private Action _replayAction;
     private Action _homeAction;
-    private bool _isInMainMenu = false;
-    private bool _clickedBack = false;
     protected override void Awake()
     {
         base.Awake();
@@ -72,7 +70,6 @@ public class PopupSetting : BaseUI<PopupSetting>
 
     public void SetInMainMenu(bool isMainMenu)
     {
-        _isInMainMenu = isMainMenu;
         _replayBtn.gameObject.SetActive(!isMainMenu);
     }
 

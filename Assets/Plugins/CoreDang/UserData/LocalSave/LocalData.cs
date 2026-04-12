@@ -183,7 +183,7 @@ namespace CoreDang
 #if UNITY_EDITOR
     public static class DataLocalTool
     {
-        [MenuItem("VGames/Clear Save Data", false, 99)]
+        [MenuItem("CoreDang/Clear Save Data", false, 99)]
         private static void ResetLocalData()
         {
             SaveGame.DeleteAll();

@@ -19,7 +19,7 @@ public class ShapeSpawner : MonoBehaviour
         _tileColors = GameConfig.Ins.TileColorConfig.ColorSprites;
         _shapeSpawnerConfig = GameConfig.Ins.ShapeSpawnerConfig.CloneData();
         GameEvents.OnNeedCreateShapes += OnCreateShapes;
-        // Checker();
+        Checker();
     }
     private void Checker()
     {
@@ -106,17 +106,17 @@ public class ShapeSpawner : MonoBehaviour
             var shapeSaved = boardData.shapesSaveData[i];
             if (shapeSaved.shapeType != ShapeType.None && shapeSaved.shapeIndex >= 0)
             {
-                var a = GameConfig.Ins.ShapeSpawnerConfig.PoolShapeConfigs.Find(e => e.ShapeType == shapeSaved.shapeType);
-                if (a != null)
+                var pool = GameConfig.Ins.ShapeSpawnerConfig.PoolShapeConfigs.Find(e => e.ShapeType == shapeSaved.shapeType);
+                if (pool != null)
                 {
                     int colorIndex = Random.Range(0, _tileColors.Count);
                     if (shapeSaved.goalItemType != GoalItemType.None && shapeSaved.itemIndexList != null && shapeSaved.itemIndexList.Count > 0)
                     {
-                        shapeList[i].RequestNewShape(a.ShapeRatios[shapeSaved.shapeIndex].ShapeData, _tileColors[colorIndex], shapeSaved.goalItemType, shapeSaved.itemIndexList);
+                        shapeList[i].RequestNewShape(pool.ShapeRatios[shapeSaved.shapeIndex].ShapeData, _tileColors[colorIndex], shapeSaved.goalItemType, shapeSaved.itemIndexList);
                     }
                     else
                     {
-                        shapeList[i].RequestNewShape(a.ShapeRatios[shapeSaved.shapeIndex].ShapeData, _tileColors[colorIndex]);
+                        shapeList[i].RequestNewShape(pool.ShapeRatios[shapeSaved.shapeIndex].ShapeData, _tileColors[colorIndex]);
                     }
                 }
             }
