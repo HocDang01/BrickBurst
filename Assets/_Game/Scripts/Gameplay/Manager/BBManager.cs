@@ -15,7 +15,7 @@ public class BBManager : SingletonMono<BBManager>, IObservable
         InMenuToGameplay = false;
         ContinueProgress = false;
         // --------- Dev ---------
-        EnableCheat = true;
+        EnableCheat = GameConfig.Ins.EnableCheat;
 
         NewAdventure = false;
     }

@@ -236,7 +236,7 @@ public class ScoreManager : MonoBehaviour
         }
         CheckAmazing();
         // Wait 0.2s to complete board
-        DOVirtual.DelayedCall(0.4f, (TweenCallback)(() =>
+        DOVirtual.DelayedCall(0.2f, (TweenCallback)(() =>
         {
             CheckAllClear();
             CheckEndGame();
@@ -522,7 +522,7 @@ public class ScoreManager : MonoBehaviour
         {
             if (tile.SquareOccupied) return;
         }
-        _gapTimeToShowNewScoreEffect -= 0.4f;
+        _gapTimeToShowNewScoreEffect -= 0.2f;
         DOVirtual.DelayedCall(_gapTimeToShowNewScoreEffect, () =>
         {
             GameEvents.AllClearEffect?.Invoke();
