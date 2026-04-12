@@ -109,6 +109,12 @@ public class ShapeSpawner : MonoBehaviour
                 var pool = GameConfig.Ins.ShapeSpawnerConfig.PoolShapeConfigs.Find(e => e.ShapeType == shapeSaved.shapeType);
                 if (pool != null)
                 {
+                    // if index wrong => respawn
+                    if(shapeSaved.shapeIndex < 0 || shapeSaved.shapeIndex >= pool.ShapeRatios.Count) 
+                    {
+                        OnCreateShapes(ShapeSpawnType.OneBeauty);
+                        return;
+                    }
                     int colorIndex = Random.Range(0, _tileColors.Count);
                     if (shapeSaved.goalItemType != GoalItemType.None && shapeSaved.itemIndexList != null && shapeSaved.itemIndexList.Count > 0)
                     {

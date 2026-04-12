@@ -22,7 +22,7 @@ public class BoardSaveData : BaseUserData
     public void SaveProgress()
     {
         HasProgress = true;
-        BoosterAmounts = BoosterManager.Ins.BoosterAmounts.Clone();
+        // BoosterAmounts = BoosterManager.Ins.BoosterAmounts.Clone();
         dirty = true;
     }
     public void ClearProgress()
