@@ -252,7 +252,7 @@ public class GameplayManager : SingletonMono<GameplayManager>
         IsInGame = false;
         BoardManager.Ins.ModifyBackBtn(false);
         GameEvents.OnEndGame?.Invoke();
-        // SoundManager.Ins.winFX.Play();
+        SoundManager.Ins.PlaySFX(SoundManager.Ins.winFX);
         if (BBManager.EnableCheat)
         {
             GameConfig.Ins.GameplayConfig.Level++;
@@ -404,7 +404,7 @@ public enum PlayMode
 //             IsInGame = false;
 //             BoardManager.Ins.ModifyBackBtn(false);
 //             GameEvents.OnEndGame?.Invoke();
-//             SoundManager.Ins.winFX.Play();
+//             SoundManager.Ins.PlaySFX(SoundManager.Ins.winFX);
 //             if (BBManager.NewAdventure)
 //             {
 //                 MilestoneIndexPrev = BBSaveData.Ins.BBMilestoneIndex;

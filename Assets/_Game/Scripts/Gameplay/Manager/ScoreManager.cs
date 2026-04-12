@@ -236,7 +236,7 @@ public class ScoreManager : MonoBehaviour
         }
         CheckAmazing();
         // Wait 0.2s to complete board
-        DOVirtual.DelayedCall(0.2f, (TweenCallback)(() =>
+        DOVirtual.DelayedCall(0.4f, (TweenCallback)(() =>
         {
             CheckAllClear();
             CheckEndGame();
@@ -522,6 +522,7 @@ public class ScoreManager : MonoBehaviour
         {
             if (tile.SquareOccupied) return;
         }
+        _gapTimeToShowNewScoreEffect -= 0.4f;
         DOVirtual.DelayedCall(_gapTimeToShowNewScoreEffect, () =>
         {
             GameEvents.AllClearEffect?.Invoke();
@@ -649,12 +650,6 @@ public class ScoreManager : MonoBehaviour
                 UpdateAdventureScore(tiles);
                 break;
         }
-        // Wait 0.2s to complete board
-        DOVirtual.DelayedCall(0.2f, (TweenCallback)(() =>
-        {
-            // CheckAllClear();
-            CheckEndGame();
-        }));
     }
     private int GetScoreBomb(int shapeCount, int comboCount)
     {

@@ -24,6 +24,10 @@ public abstract class BaseUI<T> : MonoBehaviour where T : MonoBehaviour
         (Ins as BaseUI<T>)?.OnHide();
         Ins.gameObject.SetActive(false);
     }
+    public void OnClickHidePopup()
+    {
+        Hide();
+    }
 
     protected virtual void OnShow() { }
     protected virtual void OnHide() { }

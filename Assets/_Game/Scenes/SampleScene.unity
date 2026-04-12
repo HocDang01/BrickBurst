@@ -5002,12 +5002,14 @@ MonoBehaviour:
   normalScoredFx: {fileID: 8300000, guid: 34554e3adf943104692bdffc4f0970da, type: 3}
   putTilesFx: {fileID: 8300000, guid: 78238b2d6e2faa847b740f6deb6d41cf, type: 3}
   pickupTileFx: {fileID: 8300000, guid: 92df7a3224377ae4ca88346a449a5a6e, type: 3}
+  breakTile: {fileID: 8300000, guid: 7f410a9a749943544aa4ae5cec53eda6, type: 3}
   settingsPopupShowFx: {fileID: 8300000, guid: 3e27507c56d30c343bbc0e7c4d2b42d1, type: 3}
   amazingFX: {fileID: 8300000, guid: fb474523ab5e4b54cb34e5ee3ba4f41a, type: 3}
   excellentFX: {fileID: 8300000, guid: c80fa4315db078d4095c0f7fd4d44e86, type: 3}
   failPlayFX: {fileID: 8300000, guid: 39e169267a964264c8d373a209fc56fa, type: 3}
   goodFX: {fileID: 8300000, guid: f9b50fc1b467c81428b1fbbc1e4fe941, type: 3}
   greatFX: {fileID: 8300000, guid: 521a5bb8aca19de40bc029ebbc2a1a7c, type: 3}
+  perfectFX: {fileID: 8300000, guid: 7e7eb21ab0f8ff2499ca220ae052e94e, type: 3}
   unbelieveableFX: {fileID: 8300000, guid: dd05647252dffc346a4833c95e56f703, type: 3}
   winFX: {fileID: 8300000, guid: 3f261c447e1c3c141af7895885aee5a0, type: 3}
   columns23: {fileID: 8300000, guid: 1e1f43068dbb2314e9f742c06ce5717f, type: 3}

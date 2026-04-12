@@ -38,7 +38,7 @@ public class MainMenu : BaseUI<MainMenu>
     protected override void OnShow()
     {
         // SoundyManager.StopAllSounds();
-        // SoundManager.Ins.PlayMainMenuMusic();
+        SoundManager.Ins.PlayMainMenuMusic();
         _titleAnimRoutine = StartCoroutine(PlayAnimTitleRoutine());
         // GameManager.Ins.bgPlayer.StopBGMusic();
     }

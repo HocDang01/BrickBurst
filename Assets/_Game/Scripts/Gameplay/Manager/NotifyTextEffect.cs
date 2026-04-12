@@ -66,36 +66,35 @@ public class NotifyTextEffect : MonoBehaviour
     private void ShowGood()
     {
         if (_good == null || !GameplayManager.Ins.IsInGame) return;
-        // SoundManager.Ins.goodFX.Play();
+        SoundManager.Ins.PlaySFX(SoundManager.Ins.goodFX);
         _good.Play();
     }
 
     private void ShowGreat()
     {
         if (_great == null || !GameplayManager.Ins.IsInGame) return;
-        // SoundManager.Ins.greatFX.Play();
+        SoundManager.Ins.PlaySFX(SoundManager.Ins.greatFX);
         _great.Play();
     }
 
     private void ShowPerfect()
     {
         if (_perfect == null || !GameplayManager.Ins.IsInGame) return;
-        // SoundManager.Ins.perf.Play();
-        // SoundManager.Ins.perfectFX.Play();
+        SoundManager.Ins.PlaySFX(SoundManager.Ins.perfectFX);
         _perfect.Play();
     }
     // Small: take 0.7s
     private void ShowAmazing()
     {
         if (_amazing == null || !GameplayManager.Ins.IsInGame) return;
-        // SoundManager.Ins.amazingFX.Play();
+        SoundManager.Ins.PlaySFX(SoundManager.Ins.amazingFX);
         _amazing.Play();
     }
 
     private void ShowNewScore()
     {
         if (_newScore == null || !GameplayManager.Ins.IsInGame) return;
-        // SoundManager.Ins.newBestScoreInGameFx.Play();
+        SoundManager.Ins.PlaySFX(SoundManager.Ins.newBestScoreInGameFx);
         _newScore.Play();
     }
 
@@ -108,7 +107,7 @@ public class NotifyTextEffect : MonoBehaviour
     private void ShowExcellent()
     {
         if (_excellent == null || !GameplayManager.Ins.IsInGame) return;
-        // SoundManager.Ins.excellentFX.Play();
+        SoundManager.Ins.PlaySFX(SoundManager.Ins.excellentFX);
         _excellent.Play();
     }
 

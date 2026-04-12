@@ -216,7 +216,7 @@ public class BoosterManager : MonoBehaviour
             {
                 UseBooster(BoosterType.Bomb);
                 ScoreManager.Ins.OnBombUsed(tiles);
-                // SoundManager.Ins.breakTile.Play();
+                SoundManager.Ins.PlaySFX(SoundManager.Ins.breakTile);
                 ShakeParam shakeParam = new(3 * GameConfig.Ins.GameplayConfig.InitSeverity,
                                     true, true);
                 GameEvents.ShakeCam?.Invoke(shakeParam);

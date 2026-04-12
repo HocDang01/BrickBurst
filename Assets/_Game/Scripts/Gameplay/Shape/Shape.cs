@@ -229,7 +229,7 @@ public class Shape : MonoBehaviour, IPointerClickHandler, IPointerUpHandler, IPo
         if (this is not ShapeBooster && BoosterManager.Ins && BoosterManager.Ins.BoosterTypeUsing == BoosterType.EraseShape)
         {
             if (CurrentShape == null || CurrentShape.Count <= 0) return;
-            // SoundManager.Ins.breakTile.Play();
+            SoundManager.Ins.PlaySFX(SoundManager.Ins.breakTile);
             var boosterManager = BoosterManager.Ins;
             boosterManager.BoosterTypeUsing = BoosterType.None;
             boosterManager.DisableEraseShape();
@@ -292,10 +292,9 @@ public class Shape : MonoBehaviour, IPointerClickHandler, IPointerUpHandler, IPo
         {
             return;
         }
-        // SoundManager.Ins.pickupTileFx.Play();
+        SoundManager.Ins.PlaySFX(SoundManager.Ins.pickupTileFx);
 
         _transform.DOKill();
-        // SoundManager.Ins.liftTilesFx.Play();
         // _transform.localScale = _shapeSelectedScale;
         _transform.localScale = Vector3.one;
 
@@ -323,7 +322,6 @@ public class Shape : MonoBehaviour, IPointerClickHandler, IPointerUpHandler, IPo
         {
             return;
         }
-        // SoundManager.Ins.liftTilesFx.Play();
         _transform.DOKill();
         // _transform.localScale = _shapeSelectedScale;
         _transform.localScale = Vector3.one;

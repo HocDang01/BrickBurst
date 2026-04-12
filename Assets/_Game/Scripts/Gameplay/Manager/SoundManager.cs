@@ -15,6 +15,7 @@ public class SoundManager : SingletonMono<SoundManager>
     public AudioClip normalScoredFx;
     public AudioClip putTilesFx;
     public AudioClip pickupTileFx;
+    public AudioClip breakTile;
     public AudioClip settingsPopupShowFx;
 
     public AudioClip amazingFX;
@@ -22,6 +23,7 @@ public class SoundManager : SingletonMono<SoundManager>
     public AudioClip failPlayFX;
     public AudioClip goodFX;
     public AudioClip greatFX;
+    public AudioClip perfectFX;
     public AudioClip unbelieveableFX;
     public AudioClip winFX;
     public AudioClip columns23;

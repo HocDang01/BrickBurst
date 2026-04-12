@@ -88,7 +88,7 @@ public class StartTargetAdventureAnim : MonoBehaviour
                 itemMove.transform,
                 target.transform,
                 0.6f,
-                7f,
+                5f,
                 () =>
                 {
                     itemMove.gameObject.SetActive(false);
