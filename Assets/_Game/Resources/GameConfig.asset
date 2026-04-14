@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d9f20c2632e1cf419468c1090408789, type: 3}
   m_Name: GameConfig
   m_EditorClassIdentifier: Assembly-CSharp::GameConfig
-  EnableCheat: 0
+  EnableCheat: 1
   TileColorConfig:
     ColorSprites:
     - Tile: {fileID: 21300000, guid: 405f10ccb819b0b479af972b49a5502b, type: 3}
@@ -317,7 +317,7 @@ MonoBehaviour:
     TimeFall: 100
     IntroColumnDelay: 0.03
     IntroRowDelay: 0.06
-    IntroTileHide: 0.1
+    IntroTileHide: 1
     EndColumnDelay: 0.03
     EndRowDelay: 0.06
     EndTileHide: 1
