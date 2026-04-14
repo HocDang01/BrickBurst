@@ -1,0 +1,104 @@
+anim-title-brick-burst.png
+size:2048,2048
+filter:Linear,Linear
+B
+bounds:1449,1669,307,377
+offsets:261,851,1720,1574
+B2
+bounds:2,785,312,377
+offsets:195,428,1720,1574
+C
+bounds:2,2,263,394
+offsets:954,841,1720,1574
+Generative Fill 2
+bounds:2,1164,1445,882
+offsets:159,380,1720,1574
+I
+bounds:316,784,107,361
+offsets:847,862,1720,1574
+rotate:90
+K
+bounds:704,893,269,363
+offsets:1227,862,1720,1574
+rotate:90
+Layer 10
+bounds:281,514,265,268
+offsets:1367,884,1720,1574
+Layer 11
+bounds:798,412,227,244
+offsets:89,787,1720,1574
+rotate:90
+Layer 12
+bounds:1944,1486,51,54
+offsets:94,610,1720,1574
+Layer 13
+bounds:1449,1055,237,257
+offsets:212,171,1720,1574
+rotate:90
+Layer 14
+bounds:1724,1205,220,229
+offsets:427,228,1720,1574
+Layer 15
+bounds:1944,1609,58,63
+offsets:125,222,1720,1574
+Layer 16
+bounds:1437,836,217,247
+offsets:640,182,1720,1574
+rotate:90
+Layer 17
+bounds:281,279,233,234
+offsets:916,188,1720,1574
+rotate:90
+Layer 18
+bounds:1686,781,211,204
+offsets:1157,185,1720,1574
+Layer 19
+bounds:267,15,30,34
+offsets:1406,180,1720,1574
+Layer 2
+bounds:679,801,84,90
+offsets:1073,1393,1720,1574
+Layer 20
+bounds:1708,987,216,228
+offsets:1369,230,1720,1574
+rotate:90
+Layer 3
+bounds:1944,1542,65,55
+offsets:1240,1369,1720,1574
+rotate:90
+Layer 4
+bounds:548,519,248,263
+offsets:96,1108,1720,1574
+Layer 5
+bounds:1047,683,206,208
+offsets:390,1199,1720,1574
+Layer 6
+bounds:1724,1436,218,231
+offsets:617,1188,1720,1574
+Layer 7
+bounds:798,641,247,250
+offsets:848,1156,1720,1574
+Layer 8
+bounds:517,301,211,165
+offsets:1116,1162,1720,1574
+rotate:90
+Layer 9
+bounds:267,51,226,226
+offsets:1306,1205,1720,1574
+R
+bounds:1758,1674,265,372
+offsets:783,428,1720,1574
+R-1
+bounds:1069,900,262,366
+offsets:576,862,1720,1574
+rotate:90
+S
+bounds:316,893,269,386
+offsets:1045,419,1720,1574
+rotate:90
+T
+bounds:1449,1294,273,373
+offsets:1295,430,1720,1574
+U
+bounds:2,398,277,385
+offsets:498,419,1720,1574

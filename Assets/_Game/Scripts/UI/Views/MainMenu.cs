@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using DangExtension;
 using DG.Tweening;
+using Spine.Unity;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,12 +12,11 @@ public class MainMenu : BaseUI<MainMenu>
     [SerializeField] private GameObject _mainMenuObject;
     [SerializeField] private GameObject _adventureMapObject;
     [Header("MainMenu Ref")]
+    [SerializeField] private SkeletonGraphic _titleAnim;
     [SerializeField] private Button _classicBtn;
     [SerializeField] private Button _adventureBtn;
     [SerializeField] private Button _settingBtn;
     [SerializeField] private ParticleSystem _particle;
-    [SerializeField] private TextMeshProUGUI _moneyText;
-    [SerializeField] private TextMeshProUGUI _matchText;
 
     private const string TITLE_ANIM = "animation";
     private Coroutine _titleAnimRoutine;
@@ -68,6 +68,7 @@ public class MainMenu : BaseUI<MainMenu>
     {
         _particle.gameObject.SetActive(true);
         _particle.Play();
+        _titleAnim.AnimationState.SetAnimation(0, TITLE_ANIM, false);
 
     }
     private void ClassicMode()

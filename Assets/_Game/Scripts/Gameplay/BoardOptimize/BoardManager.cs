@@ -139,6 +139,7 @@ public class BoardManager : MonoBehaviour
         if (!GameplayManager.Ins.IsInGame) return;
         PopupSetting.Show();
         var setting = PopupSetting.Ins;
+        setting.SetInMainMenu(false);
         setting.SetActionReplay(OnClickReplay);
         setting.SetActionHome(OnActionHome);
     }
