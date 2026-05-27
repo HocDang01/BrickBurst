@@ -1,36 +1,48 @@
 mergeInto(LibraryManager.library, {
 
   SaveDataJS: function (fileName, data) {
-    var parsedFileName = UTF8ToString(fileName);
-    var parsedData = UTF8ToString(data);
+    var key = UTF8ToString(fileName);
+    var value = UTF8ToString(data);
 
-    saveGameData(parsedFileName, parsedData);
+    if (typeof localStorage !== "undefined") {
+      localStorage.setItem(key, value);
+    }
   },
 
   ReadDataJS: function (dataName) {
-    var parsedDataName = UTF8ToString(dataName);
-    var gameData = getGameData(parsedDataName);
-    var bufferSize = lengthBytesUTF8(gameData) + 1;
-    var buffer = _malloc(bufferSize);
+    var key = UTF8ToString(dataName);
+    var value = "";
 
-    stringToUTF8(gameData, buffer, bufferSize);
+    if (typeof localStorage !== "undefined") {
+      value = localStorage.getItem(key) || "";
+    }
+
+    var bufferSize = lengthBytesUTF8(value) + 1;
+    var buffer = _malloc(bufferSize);
+    stringToUTF8(value, buffer, bufferSize);
 
     return buffer;
   },
 
   ExistJS: function (dataName) {
-    var parsedDataName = UTF8ToString(dataName);
-    
-    return dataExist(parsedDataName);
+    var key = UTF8ToString(dataName);
+
+    if (typeof localStorage === "undefined") return 0;
+
+    return localStorage.getItem(key) !== null ? 1 : 0;
   },
 
   DeleteJS: function (dataName) {
-    var parsedDataName = UTF8ToString(dataName);
-    
-    deleteGameData(parsedDataName);
+    var key = UTF8ToString(dataName);
+
+    if (typeof localStorage !== "undefined") {
+      localStorage.removeItem(key);
+    }
   },
 
   DeleteAllJS: function () {
-    deleteAllGameData();
+    if (typeof localStorage !== "undefined") {
+      localStorage.clear();
+    }
   }
-})
+});
