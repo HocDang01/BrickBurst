@@ -29,7 +29,7 @@ public class WelldoneEffect : MonoBehaviour
 
     private void Awake()
     {
-        _welldoneOriginPos = _welldone.transform.position;
+        _welldoneOriginPos = _welldone.transform.localPosition;
         _scoreOriginScale = _scoreObject.transform.localScale;
     }
 

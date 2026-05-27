@@ -104,7 +104,7 @@ public class GameplayManager : SingletonMono<GameplayManager>
             StopCoroutine(_countTimeRoutine);
             _countTimeRoutine = null;
         }
-        BoardManager.Ins.ModifyBackBtn(true);
+        GameplayView.Ins.ModifyBackBtn(true);
         PlayTime = 0;
         _countTimeRoutine = StartCoroutine(CountPlayTime());
         IsInGame = true;
@@ -129,7 +129,7 @@ public class GameplayManager : SingletonMono<GameplayManager>
             BoardSaveData.Ins.ClearAdventure();
         }
         IsInGame = false;
-        BoardManager.Ins.ModifyBackBtn(false);
+        GameplayView.Ins.ModifyBackBtn(false);
         float timeWait = GameConfig.Ins.EffectConfig.EndColumnDelay * 8
                              + GameConfig.Ins.EffectConfig.EndRowDelay * 8
                              + GameConfig.Ins.EffectConfig.EndTileHide
@@ -148,7 +148,7 @@ public class GameplayManager : SingletonMono<GameplayManager>
                     popupWatchAds.SetAction(
                         continueAction: (Action)(() =>
                         {
-                            BoardManager.Ins.ModifyBackBtn(true);
+                            GameplayView.Ins.ModifyBackBtn(true);
                             IsInGame = true;
                             ShapeSpawner.Ins.SpawnShapeWatchAds(shapes);
                             DOVirtual.DelayedCall(0.01f, (TweenCallback)(() =>
@@ -185,7 +185,7 @@ public class GameplayManager : SingletonMono<GameplayManager>
         SoundManager.Ins.PlaySFX(SoundManager.Ins.failPlayFX);
         GameEvents.OnEndGame?.Invoke();
 
-        BoardManager.Ins.ModifyBackBtn(false);
+        GameplayView.Ins.ModifyBackBtn(false);
         IsInGame = false;
         Debug.Log("Lose");
         float timeWait = 0.1f;
@@ -250,7 +250,7 @@ public class GameplayManager : SingletonMono<GameplayManager>
     {
         SendTracking(true);
         IsInGame = false;
-        BoardManager.Ins.ModifyBackBtn(false);
+        GameplayView.Ins.ModifyBackBtn(false);
         GameEvents.OnEndGame?.Invoke();
         SoundManager.Ins.PlaySFX(SoundManager.Ins.winFX);
         if (BBManager.EnableCheat)
@@ -402,7 +402,7 @@ public enum PlayMode
 //         {
 //             SendTracking(true);
 //             IsInGame = false;
-//             BoardManager.Ins.ModifyBackBtn(false);
+//             GameplayView.Ins.ModifyBackBtn(false);
 //             GameEvents.OnEndGame?.Invoke();
 //             SoundManager.Ins.PlaySFX(SoundManager.Ins.winFX);
 //             if (BBManager.NewAdventure)

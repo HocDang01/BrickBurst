@@ -14,7 +14,6 @@ public class BoardManager : MonoBehaviour
     [SerializeField] protected List<Shape> _shapes;
     [Header("Setting Button")]
     [SerializeField] protected Button _settingBtn;
-    [SerializeField] protected Button _backBtn;
 
     protected int _rowsCount = 8;
     protected int _columnsCount = 8;
@@ -209,7 +208,6 @@ public class BoardManager : MonoBehaviour
     protected void RestartGame(TargetData targetScoreData)
     {
         _instance = this;
-        _backBtn.enabled = true;
         _noSpaceLeft.gameObject.SetActive(false);
         BoardScoreService.ClearList();
         BoardOutlineRenderer.HideAllOutlines();
@@ -454,10 +452,6 @@ public class BoardManager : MonoBehaviour
 
 
     #region CheckEndGame
-    public void ModifyBackBtn(bool enabled)
-    {
-        _backBtn.enabled = enabled;
-    }
     public void CheckLoseGame()
     {
 

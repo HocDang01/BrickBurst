@@ -129,50 +129,5 @@ public class AdventureMap : MonoBehaviour
             _startBtnImg.sprite = _enableBtnSprite;
         }
     }
-    // private void CheckTrophy()
-    // {
-    //     int level = 0;
-    //     if (BBManager.EnableCheat)
-    //     {
-    //         level = GameConfig.Ins.GameplayConfig.Level;
-    //     }
-    //     else
-    //     {
-    //         level = BBSaveData.Ins.BrickBurstLevel;
-    //     }
-    //     var config = GameConfig.Ins.MainMenuConfig.AdventureLevelConfigs;
-    //     int idx = -1;
-    //     for (int i = 0; i < config.Count; i++)
-    //     {
-    //         if (level >= config[i].MinLevel && level <= config[i].MaxLevel)
-    //         {
-    //             idx = i;
-    //             break;
-    //         }
-    //     }
-    //     if (idx < 0) return;
-    //     _trophyFillImage.fillAmount = (float)(level - config[idx].MinLevel) / (float)(config[idx].MaxLevel - config[idx].MinLevel + 1);
-    // }
-    private void CheckMaxLevel()
-    {
-        int level = 0;
-        if (BBManager.EnableCheat)
-        {
-            level = GameConfig.Ins.GameplayConfig.Level;
-            if (level > 24)
-            {
-                GameConfig.Ins.GameplayConfig.Level = 1;
-            }
-        }
-        else
-        {
-            level = BBSaveData.Ins.Level;
-            if (level > 24)
-            {
-                BBSaveData.Ins.Level = 1;
-                BBSaveData.Ins.dirty = true;
-            }
-        }
-    }
 }
 

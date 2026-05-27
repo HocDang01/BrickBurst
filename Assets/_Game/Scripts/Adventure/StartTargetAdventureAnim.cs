@@ -153,7 +153,10 @@ public class StartTargetAdventureAnim : MonoBehaviour
         transform.localScale = Vector3.zero;
         transform.DOScale(1f, 0.3f).SetEase(Ease.OutSine).OnComplete(() =>
         {
-            ScoreMoveToTargetAnim();
+            DOVirtual.DelayedCall(0.8f, () =>
+            {
+                ScoreMoveToTargetAnim();
+            });
         });
     }
     private void ScoreMoveToTargetAnim()

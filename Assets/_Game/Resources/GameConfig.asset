@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d9f20c2632e1cf419468c1090408789, type: 3}
   m_Name: GameConfig
   m_EditorClassIdentifier: Assembly-CSharp::GameConfig
-  EnableCheat: 1
+  EnableCheat: 0
   TileColorConfig:
     ColorSprites:
     - Tile: {fileID: 21300000, guid: 405f10ccb819b0b479af972b49a5502b, type: 3}
@@ -240,7 +240,7 @@ MonoBehaviour:
       - ShapeData: {fileID: 11400000, guid: ca9b124b1d236f0438879e6a8dd27c10, type: 2}
   GameplayConfig:
     Level: 1
-    MaxLevel: 2
+    MaxLevel: 270
     LevelToLoop: 24
     EverySquareOffset: 3
     CountStartRainbow: 3
@@ -326,6 +326,3 @@ MonoBehaviour:
     FolderLevelPath: Assets/Resources/Levels
     FolderName: Levels
     LevelName: Level_
-    AdventureLevelConfigs:
-    - MinLevel: 1
-      MaxLevel: 78

@@ -18,7 +18,13 @@ public class GameplayView : BaseUI<GameplayView>
     private void OnClickBack()
     {
         MainMenu.Show();
+        Hide();
         GameEvents.OnBackMainMenu?.Invoke(false);
+    }
+
+    public void ModifyBackBtn(bool enabled)
+    {
+        _backBtn.enabled = enabled;
     }
 
     protected override void OnShow()

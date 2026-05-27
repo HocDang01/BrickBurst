@@ -226,7 +226,7 @@ public class PopupEndAdventure : PopupEndGame<PopupEndAdventure>
         // Reset scale
         // _titleRect.localScale = Vector3.zero;
 
-        // _content.localScale = Vector3.zero;
+        _content.localScale = Vector3.zero;
 
         Sequence sequence = DOTween.Sequence();
 
@@ -243,7 +243,7 @@ public class PopupEndAdventure : PopupEndGame<PopupEndAdventure>
             {
                 //@TODO: Spawn VFX Win
             })
-            // .Append(_content.DOScale(1f, 0.6f).SetEase(Ease.OutBack))
+            .Append(_content.DOScale(1f, 0.6f).SetEase(Ease.OutBack))
             .AppendInterval(0.3f)
             .AppendInterval(0.3f)
 
